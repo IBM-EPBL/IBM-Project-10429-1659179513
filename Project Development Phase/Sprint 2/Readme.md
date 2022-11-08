@@ -3,7 +3,7 @@ Classification of Arrhythmia by Using Deep Learning with 2-D ECG Spectral Image 
 
 This is the work done during sprint 2, stated in the Sprint Delivery plan, which includes:
 
-=>Model Building:<br>
+#Model Building:<br>
    -->Import The Libraries<br>
    -->Initialize The Model<br>
    -->Adding CNN Layers<br>
