@@ -9,4 +9,4 @@ This is the work done during sprint 1, stated in the Sprint Delivery plan, which
    -->Configure ImageDataGenerator Class<br>
    -->Apply ImageDataGenerator Functionality To Trainset And Testset
 
-<h5>Note:</h5>The dataset uploaded is not complete, due to its size issues.So, it is recommended to use the link in the data.txt file to download dataset.
+<h5>Note:</h5>The dataset uploaded is not complete, due to its size issues.So, it is recommended to use the link in the Dataset.txt file to download dataset.
