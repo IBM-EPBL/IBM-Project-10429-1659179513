@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+}
+#background{
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 20px 20px 20px 20px;
+  
+}
+#button{
+  margin-top: 100px;
+}
+.btn {
+  border: none;
+  background-color: #00ab6c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Green */
+.success {
+  color: rgb(255, 255, 255);
+}
+
+.success:hover {
+  background-color: #018857;
+  color: white;
+}
+</style>
+</head>
+<body>
+ 
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <div class="w3-bar-item w3">ECG arrhythmia Classigication</div>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="{{ url_for('home') }}" class="w3-bar-item w3-button">Home</a>
+      <a href="{{ url_for('information') }}" class="w3-bar-item w3-button">Info</a>
+      <a href="{{ url_for('test') }}" class="w3-bar-item w3-button">Predict</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="static/image5.jpg" style="width:100%;">
+  <div class="centered", id="background">
+    <div style="padding-bottom:40px;font-size: 80px;">ECG Arrhythmia Classification</div>
+    <div class="w3-top" id="button" >
+      <form action = "/predict" method = "post" enctype="multipart/form-data">
+        <input type="file" accept="image/*" name="file" style="display: none" id="file" >
+        <label for="file" class="btn success" style="margin-top:200px;">Browse Files</label>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type = "submit" value=" Predict " class="btn success" style="margin-top: 100px;">
+        
+      </form>
+      
+  </div>
+  </div>
+</div>
+  
+   
+    
+</form>  
+
+<script>
+   
+</script>
+
+
+</body>
+</html>
