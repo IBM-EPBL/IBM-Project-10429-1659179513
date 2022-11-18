@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+#ecg{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 50px;
+
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  
+  transform: translate(-30%, -50%);
+}
+
+#background{
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 20px 20px 20px 20px;
+  background-color: rgba(0, 0,0,.7);
+ 
+  
+}
+</style>
+</head>
+<body>
+  
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <div class="w3-bar-item w3">ECG arrhythmia Classigication</div>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="{{ url_for('home') }}" class="w3-bar-item w3-button">Home</a>
+      <a href="{{ url_for('information') }}" class="w3-bar-item w3-button">Info</a>
+      <a href="{{ url_for('test') }}" class="w3-bar-item w3-button">Predict</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <img src="/static/image3.jpg" style="width:100%;">
+  <div class="centered", id="background">
+    <div id="ecg" style="padding-bottom:20px ;">ECG</div>
+    <img src="/static/info_ecg.jpg" alt="Ecg" style="width:100%; float: right;height:300px;width:450px;">
+    <div style="font-size:30px ;color:aquamarine">Normal</div>
+    <div style="padding-right:480px;font-size: 20px;">A normal ECG is illustrated. Note that the heart is beating in a regular sinus rhythm between 60 - 100 beats per minute (specifically 82 bpm).
+       All the important intervals on this recording are  within normal ranges.</div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
